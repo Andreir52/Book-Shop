@@ -1,0 +1,33 @@
+﻿@model Proiect_DAW.Models.Books
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Book_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th></th>
+    </tr>
+
+
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => Model.Book_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.Price)$
+        </td>
+      
+    </tr>
+
+
+</table>
